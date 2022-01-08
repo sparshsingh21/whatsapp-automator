@@ -1,4 +1,4 @@
-# whatsapp-automator
+# Whatsapp Automator
 Script to send bulk Whatsapp messages.
 Steps:
 1. Download the script.
