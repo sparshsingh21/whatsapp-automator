@@ -39,8 +39,18 @@ driver.get('https://web.whatsapp.com')
 input("Press ENTER once the chats are visible.")
 for idx, number in enumerate(numbers):
 	number = number.strip()
+	# if the line is blank, skip the line
 	if number == "":
 		continue
+	# if number starts with 0, remove the 0 and put +91 (as country code is required by whatsapp)
+	if number[0] == "0":
+		new = '+91' + number[1:]
+		print(f"Changing {number} to: ", end = " ") 
+		number = new
+		print(number)
+	# if there is no country code, add it
+	if number[0] != '+':
+		number = '+91' + number
 	print('{}/{} => Sending message to {}.'.format((idx+1), total_number, number))
 	try:
 		url = 'https://web.whatsapp.com/send?phone=' + number + '&text=' + message
