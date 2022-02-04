@@ -2,7 +2,7 @@
 Script to send bulk Whatsapp messages.
 
 Steps:
-1. Download the script.
+1. Download the script by clicking [here](https://github.com/sparshsingh21/whatsapp-automator/archive/refs/heads/main.zip)
 2. Go to project directory and run ```pip install -r requirements.txt```
 3. Open the message.txt file and type your message.
 4. Open the numbers.txt file and add all the numbers on which the message is to be sent.
