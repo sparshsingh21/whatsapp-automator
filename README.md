@@ -1,5 +1,6 @@
 # Whatsapp Automator
 Script to send bulk Whatsapp messages.
+
 Steps:
 1. Download the script.
 2. Go to project directory and run ```pip install -r requirements.txt```
